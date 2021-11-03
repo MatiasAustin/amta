@@ -1,7 +1,10 @@
 // zoom control button
 
-const zoomStyleMouse = document.getElementById("button-maps");
-zoomStyleMouse.addEventListener("click", getValueZoomStyle);
+const zoomStyleZoomOut = document.querySelector("div#zoom-control .zoomOut");
+zoomStyleZoomOut.addEventListener("mouseover", getValueZoomStyle);
+
+const zoomStyleZoomIn = document.querySelector("div#zoom-control .zoomIn");
+zoomStyleZoomIn.addEventListener("mouseover", getValueZoomStyle);
 
 const zoomStyleCss = document.querySelector("div#maps-image #frame-dragable-image-fairhall #dragable-image img");
 zoomStyleCss.addEventListener("transitionrun", getValueZoomStyle);
@@ -18,15 +21,15 @@ function getValueZoomStyle () {
     //convert value to number
     const convertwidth = parseFloat(zoomStyleWidth);
     const convertheight = parseFloat(zoomStyleHeight);
+    // console.log(convertwidth);
+    // console.log(convertheight);
+    // zoomStyleCss.addEventListener("click", clearValue)
 
-    zoomStyleMouse.addEventListener("click", clearValue)
-
-    function clearValue () {
-        console.clear(convertwidth);
-        console.clear(convertheight);
-        delete convertheight;
-        delete convertwidth;
-    }
+    // function clearValue () {
+    //     
+    //     // delete convertheight;
+    //     // delete convertwidth;
+    // }
 
     // console.log(convertwidth);
     // console.log(convertheight);
@@ -82,10 +85,10 @@ function getValueZoomStyle () {
     const parentBooth = document.getElementById("partner-booth");
     
     //reposition column (child DIV)
-    const column1 = document.querySelector("div#partner-booth .column1");
-    const column2 = document.querySelector("div#partner-booth .column2");
-    const column3 = document.querySelector("div#partner-booth .column3");
-    const column4 = document.querySelector("div#partner-booth .column4");
+    const column1 = document.getElementById("column1");
+    const column2 = document.getElementById("column2");
+    const column3 = document.getElementById("column3");
+    const column4 = document.getElementById("column4");
 
 
     /////////////////////////////
@@ -93,88 +96,88 @@ function getValueZoomStyle () {
     //reposition booth
 
     //reposition booth C1
-    const r1b1 = document.querySelector("div#partner-booth .column1 .booth1");
-    const r1b2 = document.querySelector("div#partner-booth .column1 .booth2");
-    const r1b3 = document.querySelector("div#partner-booth .column1 .booth3");
-    const r1b4 = document.querySelector("div#partner-booth .column1 .booth4");
-    const r1b5 = document.querySelector("div#partner-booth .column1 .booth5");
-    const r1b6 = document.querySelector("div#partner-booth .column1 .booth6");
-    const r1b7 = document.querySelector("div#partner-booth .column1 .booth7");
-    const r1b8 = document.querySelector("div#partner-booth .column1 .booth8");
+    const r1b1 = document.getElementById("booth1");
+    const r1b2 = document.getElementById("booth2");
+    const r1b3 = document.getElementById("booth3");
+    const r1b4 = document.getElementById("booth4");
+    const r1b5 = document.getElementById("booth5");
+    const r1b6 = document.getElementById("booth6");
+    const r1b7 = document.getElementById("booth7");
+    const r1b8 = document.getElementById("booth8");
 
     //reposition booth C2
-    const r2b9 = document.querySelector("div#partner-booth .column2 .booth9");
-    const r2b10 = document.querySelector("div#partner-booth .column2 .booth10");
-    const r2b11 = document.querySelector("div#partner-booth .column2 .booth11");
-    const r2b12 = document.querySelector("div#partner-booth .column2 .booth12");
-    const r2b13 = document.querySelector("div#partner-booth .column2 .booth13");
-    const r2b14 = document.querySelector("div#partner-booth .column2 .booth14");
-    const r2b15 = document.querySelector("div#partner-booth .column2 .booth15");
-    const r2b16 = document.querySelector("div#partner-booth .column2 .booth16");
+    const r2b9 = document.getElementById("booth9");
+    const r2b10 = document.getElementById("booth10");
+    const r2b11 = document.getElementById("booth11");
+    const r2b12 = document.getElementById("booth12");
+    const r2b13 = document.getElementById("booth13");
+    const r2b14 = document.getElementById("booth14");
+    const r2b15 = document.getElementById("booth15");
+    const r2b16 = document.getElementById("booth16");
 
     //reposition booth C3
-    const r3b17 = document.querySelector("div#partner-booth .column3 .booth17");
-    const r3b18 = document.querySelector("div#partner-booth .column3 .booth18");
-    const r3b19 = document.querySelector("div#partner-booth .column3 .booth19");
-    const r3b20 = document.querySelector("div#partner-booth .column3 .booth20");
-    const r3b21 = document.querySelector("div#partner-booth .column3 .booth21");
-    const r3b22 = document.querySelector("div#partner-booth .column3 .booth22");
-    const r3b23 = document.querySelector("div#partner-booth .column3 .booth23");
+    const r3b17 = document.getElementById("booth17");
+    const r3b18 = document.getElementById("booth18");
+    const r3b19 = document.getElementById("booth19");
+    const r3b20 = document.getElementById("booth20");
+    const r3b21 = document.getElementById("booth21");
+    const r3b22 = document.getElementById("booth22");
+    const r3b23 = document.getElementById("booth23");
     
 
     //reposition booth C4
-    const r4b24 = document.querySelector("div#partner-booth .column4 .booth24");
-    const r4b25 = document.querySelector("div#partner-booth .column4 .booth25");
-    const r4b26 = document.querySelector("div#partner-booth .column4 .booth26");
-    const r4b27 = document.querySelector("div#partner-booth .column4 .booth27");
-    const r4b28 = document.querySelector("div#partner-booth .column4 .booth28");
-    const r4b29 = document.querySelector("div#partner-booth .column4 .booth29");
-    const r4b30 = document.querySelector("div#partner-booth .column4 .booth30");
-    const r4b31 = document.querySelector("div#partner-booth .column4 .booth31");
-    const r4b32 = document.querySelector("div#partner-booth .column4 .booth32");
+    const r4b24 = document.getElementById("booth24");
+    const r4b25 = document.getElementById("booth25");
+    const r4b26 = document.getElementById("booth26");
+    const r4b27 = document.getElementById("booth27");
+    const r4b28 = document.getElementById("booth28");
+    const r4b29 = document.getElementById("booth29");
+    const r4b30 = document.getElementById("booth30");
+    const r4b31 = document.getElementById("booth31");
+    const r4b32 = document.getElementById("booth32");
 
     ////////////////////////
 
     //img resize object C1
-    const C1b1 = document.querySelector("div#partner-booth .column1 .booth1 img");
-    const C1b2 = document.querySelector("div#partner-booth .column1 .booth2 img");
-    const C1b3 = document.querySelector("div#partner-booth .column1 .booth3 img");
-    const C1b4 = document.querySelector("div#partner-booth .column1 .booth4 img");
-    const C1b5 = document.querySelector("div#partner-booth .column1 .booth5 img");
-    const C1b6 = document.querySelector("div#partner-booth .column1 .booth6 img");
-    const C1b7 = document.querySelector("div#partner-booth .column1 .booth7 img");
-    const C1b8 = document.querySelector("div#partner-booth .column1 .booth8 img");
+    const C1b1 = document.querySelector("div#partner-booth #column1 #booth1 img");
+    const C1b2 = document.querySelector("div#partner-booth #column1 #booth2 img");
+    const C1b3 = document.querySelector("div#partner-booth #column1 #booth3 img");
+    const C1b4 = document.querySelector("div#partner-booth #column1 #booth4 img");
+    const C1b5 = document.querySelector("div#partner-booth #column1 #booth5 img");
+    const C1b6 = document.querySelector("div#partner-booth #column1 #booth6 img");
+    const C1b7 = document.querySelector("div#partner-booth #column1 #booth7 img");
+    const C1b8 = document.querySelector("div#partner-booth #column1 #booth8 img");
 
     //img resize object C2
-    const C2b9 = document.querySelector("div#partner-booth .column2 .booth9 img");
-    const C2b10 = document.querySelector("div#partner-booth .column2 .booth10 img");
-    const C2b11 = document.querySelector("div#partner-booth .column2 .booth11 img");
-    const C2b12 = document.querySelector("div#partner-booth .column2 .booth12 img");
-    const C2b13 = document.querySelector("div#partner-booth .column2 .booth13 img");
-    const C2b14 = document.querySelector("div#partner-booth .column2 .booth14 img");
-    const C2b15 = document.querySelector("div#partner-booth .column2 .booth15 img");
-    const C2b16 = document.querySelector("div#partner-booth .column2 .booth16 img");
+    const C2b9 = document.querySelector("div#partner-booth #column2 #booth9 img");
+    const C2b10 = document.querySelector("div#partner-booth #column2 #booth10 img");
+    const C2b11 = document.querySelector("div#partner-booth #column2 #booth11 img");
+    const C2b12 = document.querySelector("div#partner-booth #column2 #booth12 img");
+    const C2b13 = document.querySelector("div#partner-booth #column2 #booth13 img");
+    const C2b14 = document.querySelector("div#partner-booth #column2 #booth14 img");
+    const C2b15 = document.querySelector("div#partner-booth #column2 #booth15 img");
+    const C2b16 = document.querySelector("div#partner-booth #column2 #booth16 img");
 
     //img resize object C3
-    const C3b17 = document.querySelector("div#partner-booth .column3 .booth17 img");
-    const C3b18 = document.querySelector("div#partner-booth .column3 .booth18 img");
-    const C3b19 = document.querySelector("div#partner-booth .column3 .booth19 img");
-    const C3b20 = document.querySelector("div#partner-booth .column3 .booth20 img");
-    const C3b21 = document.querySelector("div#partner-booth .column3 .booth21 img");
-    const C3b22 = document.querySelector("div#partner-booth .column3 .booth22 img");
-    const C3b23 = document.querySelector("div#partner-booth .column3 .booth23 img");
+    const C3b17 = document.querySelector("div#partner-booth #column3 #booth17 img");
+    const C3b18 = document.querySelector("div#partner-booth #column3 #booth18 img");
+    const C3b19 = document.querySelector("div#partner-booth #column3 #booth19 img");
+    const C3b20 = document.querySelector("div#partner-booth #column3 #booth20 img");
+    const C3b21 = document.querySelector("div#partner-booth #column3 #booth21 img");
+    const C3b22 = document.querySelector("div#partner-booth #column3 #booth22 img");
+    const C3b23 = document.querySelector("div#partner-booth #column3 #booth23 img");
     
 
     //img resize object C4
-    const C4b24 = document.querySelector("div#partner-booth .column4 .booth24 img");
-    const C4b25 = document.querySelector("div#partner-booth .column4 .booth25 img");
-    const C4b26 = document.querySelector("div#partner-booth .column4 .booth26 img");
-    const C4b27 = document.querySelector("div#partner-booth .column4 .booth27 img");
-    const C4b28 = document.querySelector("div#partner-booth .column4 .booth28 img");
-    const C4b29 = document.querySelector("div#partner-booth .column4 .booth29 img");
-    const C4b30 = document.querySelector("div#partner-booth .column4 .booth30 img");
-    const C4b31 = document.querySelector("div#partner-booth .column4 .booth31 img");
-    const C4b32 = document.querySelector("div#partner-booth .column4 .booth32 img");
+    const C4b24 = document.querySelector("div#partner-booth #column4 #booth24 img");
+    const C4b25 = document.querySelector("div#partner-booth #column4 #booth25 img");
+    const C4b26 = document.querySelector("div#partner-booth #column4 #booth26 img");
+    const C4b27 = document.querySelector("div#partner-booth #column4 #booth27 img");
+    const C4b28 = document.querySelector("div#partner-booth #column4 #booth28 img");
+    const C4b29 = document.querySelector("div#partner-booth #column4 #booth29 img");
+    const C4b30 = document.querySelector("div#partner-booth #column4 #booth30 img");
+    const C4b31 = document.querySelector("div#partner-booth #column4 #booth31 img");
+    const C4b32 = document.querySelector("div#partner-booth #column4 #booth32 img");
 
 
      //stylesheet var
