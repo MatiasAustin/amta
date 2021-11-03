@@ -1,0 +1,222 @@
+*  { 
+    margin: 0;
+    padding: 0; 
+}
+
+
+body    {
+    background-image: url(../img/BG-Image.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper   {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1240px;
+    height: auto;
+    justify-content: center;
+    background-color: #2424243a;
+    box-shadow: 0px 0px 35px rgba(56, 56, 56, 0.459);
+    /* border-radius: 0px 0px 100px 100px; */
+
+}
+
+#header {
+    display: flex;
+    margin: 0;
+    gap: 200px;
+    /* width: 100%; */
+    height: 70px;
+    /* background-color: #24242473; */
+    align-items: center;
+}
+
+#logo   {
+    margin-top: 10px;
+    margin-left: 50px;
+    color: lavender;
+
+}
+
+
+#landing-page   {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    padding: 0;
+    /* background-color: #ffffff; */
+    border-radius: 0px 0px 100px 100px;
+}
+
+#frame-sidebar    {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 250px;
+    background-color: #242424d0;
+    border-radius: 0px 0px 0px 100px;
+    align-items: center;
+    gap: 50px;
+    border-radius: 0px 0px 0px 100px;
+}
+
+#sidebar-clip   {
+    position: absolute;
+    clip: rect(0px,250px,580px,0px);
+
+}
+
+#sidebar-animation  {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+    gap: 49px;
+    animation-name: sidebar;
+    animation-duration: 25s;
+    animation-timing-function:linear;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sidebar {
+    from {margin-top: 0px;}
+    to {margin-top: -556px;}
+}
+
+#sidebar-animation:hover{
+    animation-play-state: paused;
+}
+
+.logo-list  {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 250px;
+    align-items: center;
+    gap: 49px;
+}
+/* sidebar animation stop */
+
+
+.banner    {
+    display: flex;
+    flex-direction: column;
+    width: 1020px;
+    margin: 0;
+    border-radius: 0px 0px 100px 0px;
+    align-items: center;
+}
+
+.logo-button    {
+    display: flex;
+    top: 200px;
+    gap: 150px;
+    position: absolute;
+}
+
+.logo-button a  {
+    display: block;
+    padding: 30px 60px;
+    /* background-color: khaki; */
+    align-items: center;
+}
+
+
+
+
+/* ENTER HERE Button style - start */
+
+#enter-button   {
+    top: 530px;
+    position: absolute;
+
+}
+
+#enter-button a   {
+    display: block;
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: #92BABA;
+    text-decoration: none;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #ededed;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 18px;
+    box-shadow: 0px 0px 15px rgba(56, 56, 56, 0.459);
+}
+
+#enter-button a:hover    {
+    color: #d6d6d6;
+    font-weight: bold;
+    background-color: #7fa3a3;
+}
+
+/* ENTER HERE Button style - stop */
+
+
+.about  {
+    width: 80%;
+    margin: 100px;
+    color: lavender;
+}
+
+.about h3   {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+
+}
+
+.about p    {
+    font-family: "barlow", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: 26px;
+    font-stretch: semi-expanded;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    background-color: #242424d0;
+}
+
+.footer h5  {
+    margin: 100px;
+    color: lavender;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+
+
+
+
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url(../img/BG-Image.jpg);
+        /* background-position: center; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        overflow: auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+
+}
