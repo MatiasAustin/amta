@@ -1,0 +1,81 @@
+*   {
+    margin: 0;
+    padding: 0;
+}
+
+body    {
+    background-color: #ededed;
+
+}
+
+#wrapper     {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #ffffff;
+
+}
+
+#header {
+
+    position: relative;
+    height: 70px;
+    background-color: #444444;
+
+}
+
+#frame-slide   {
+    margin: 15px;
+    float: right;
+    width: 600px;
+    height: 35px;
+    background-color: #ededed;
+    border-radius: 10px;
+    
+
+}
+
+#slider-clip {
+    position: absolute;
+    clip: rect(0px,600px,35px,0px);
+    
+}
+
+#slider-animation {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+    animation-name: slider1;
+    animation-duration: 20s;
+    animation-timing-function:linear;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes slider1 {
+    from {margin-left:0px}
+    to{margin-left: -600px;}
+}
+
+#slider-animation:hover{
+    animation-play-state: paused;
+}
+
+#logo-partner {
+    display: flex;
+    gap: 30px;  
+}
+
+#logo-partner2 {
+    display: flex;
+    gap: 30px;    
+}
+
+
+#logo-partner   li   {
+    list-style: none;
+}
+
+#logo-partner2   li   {
+    list-style: none;
+}
