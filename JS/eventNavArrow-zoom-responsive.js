@@ -1,9 +1,15 @@
 // responsive zoom data
-const zoomStyleResponsive = document.querySelector("div#maps-image #frame-dragable-image-fairhall #dragable-image img");
-zoomStyleResponsive.addEventListener("transitionrun", getValueZoomStyle);
+// const zoomStyleResponsive = document.querySelector("div#maps-image #frame-dragable-image-fairhall #dragable-image img");
+// zoomStyleResponsive.addEventListener("transitionrun", getValueZoomStyle);
 
-const zoomStyleResponsiveOnMouse = document.getElementById("button-maps");
-zoomStyleResponsiveOnMouse.addEventListener("click", getValueZoomStyle);
+const upArrow = document.querySelector("div#vertical .up");
+upArrow.addEventListener("mouseover", getValueZoomStyle);
+const downArrow = document.querySelector("div#vertical .down");
+downArrow.addEventListener("mouseover", getValueZoomStyle);
+const leftArrow = document.querySelector("div#horizontal .left");
+leftArrow.addEventListener("mouseover", getValueZoomStyle);
+const rightArrow = document.querySelector("div#horizontal .right");
+rightArrow.addEventListener("mouseover", getValueZoomStyle);
 
 // const zoomStyleResponsiveOnMouse = document.getElementById("button-maps");
 // zoomStyleResponsiveOnMouse.addEventListener("mouseover", getValueZoomStyle);
@@ -18,17 +24,17 @@ function getValueZoomStyle () {
     const convertheight = parseFloat(zoomStyleHeight);
 
     //preview result zoomStyle value
-    console.log(convertwidth);
-    console.log(convertheight);
+    // console.log(convertwidth);
+    // console.log(convertheight);
 
-    zoomStyleResponsive.addEventListener("transitionstart", clearValue)
+    // zoomStyleResponsive.addEventListener("transitionstart", clearValue)
 
-    function clearValue () {
-        console.clear(convertwidth);
-        console.clear(convertheight);
-        delete convertheight;
-        delete convertwidth;
-    }
+    // function clearValue () {
+    //     console.clear(convertwidth);
+    //     console.clear(convertheight);
+    //     delete convertheight;
+    //     delete convertwidth;
+    // }
 
 //last value zoom for responsive nav-arrow
 let lastZoomWidth = convertwidth;
@@ -42,7 +48,7 @@ let lastZoomHeight = convertheight;
         const verticalStyleMouse = document.getElementById("button-maps");
         verticalStyleMouse.addEventListener("mouseover", getValueVertical);
 
-        const verticalStyleCss = document.querySelector("div#maps-image #frame-dragable-image-fairhall #dragable-image");
+        const verticalStyleCss = document.getElementById("dragable-image");
         verticalStyleCss.addEventListener("transitionrun", getValueVertical);
 
         //last value for nav-arrow
@@ -115,7 +121,7 @@ let lastZoomHeight = convertheight;
         const horizontalStyleMouse = document.getElementById("button-maps");
         horizontalStyleMouse.addEventListener("mouseover", getValueHorizontal);
 
-        const horizontalStyleCss = document.querySelector("div#maps-image #frame-dragable-image-fairhall #dragable-image");
+        const horizontalStyleCss = document.getElementById("dragable-image");
         horizontalStyleCss.addEventListener("transitionrun", getValueHorizontal);
             
         function getValueHorizontal() {
@@ -191,7 +197,7 @@ let lastZoomHeight = convertheight;
         const verticalStyleMouse = document.getElementById("button-maps");
         verticalStyleMouse.addEventListener("mouseover", getValueVertical);
 
-        const verticalStyleCss = document.querySelector("div#maps-image #frame-dragable-image-fairhall #dragable-image");
+        const verticalStyleCss = document.getElementById("dragable-image");
         verticalStyleCss.addEventListener("transitionrun", getValueVertical);
 
         //last value for nav-arrow
@@ -264,7 +270,7 @@ let lastZoomHeight = convertheight;
         const horizontalStyleMouse = document.getElementById("button-maps");
         horizontalStyleMouse.addEventListener("mouseover", getValueHorizontal);
 
-        const horizontalStyleCss = document.querySelector("div#maps-image #frame-dragable-image-fairhall #dragable-image");
+        const horizontalStyleCss = document.getElementById("dragable-image");
         horizontalStyleCss.addEventListener("transitionrun", getValueHorizontal);
             
         function getValueHorizontal() {
@@ -339,7 +345,7 @@ let lastZoomHeight = convertheight;
         const verticalStyleMouse = document.getElementById("button-maps");
         verticalStyleMouse.addEventListener("mouseover", getValueVertical);
 
-        const verticalStyleCss = document.querySelector("div#maps-image #frame-dragable-image-fairhall #dragable-image");
+        const verticalStyleCss = document.getElementById("dragable-image");
         verticalStyleCss.addEventListener("transitionrun", getValueVertical);
 
         //last value for nav-arrow
@@ -412,7 +418,7 @@ let lastZoomHeight = convertheight;
         const horizontalStyleMouse = document.getElementById("button-maps");
         horizontalStyleMouse.addEventListener("mouseover", getValueHorizontal);
 
-        const horizontalStyleCss = document.querySelector("div#maps-image #frame-dragable-image-fairhall #dragable-image");
+        const horizontalStyleCss = document.getElementById("dragable-image");
         horizontalStyleCss.addEventListener("transitionrun", getValueHorizontal);
             
         function getValueHorizontal() {
