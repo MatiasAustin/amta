@@ -18,7 +18,7 @@ body    {
     margin: 0 auto;
     width: 1240px;
     height: auto;
-    background-color: #ffffff;
+    background-color: #F2F2F3;
     box-shadow: 0px 0px 10px rgba(56, 56, 56, 0.459);
     /* border-radius: 0px 0px 100px 100px; */
 
@@ -102,7 +102,7 @@ body    {
 #frame-menu {
     position: relative;
     float: left;
-    margin-bottom: -50px;
+    margin-bottom: 0px;
     width: 100%;
     height: 50px;
     z-index: 9;
@@ -132,8 +132,30 @@ body    {
 #nav-menu ul li a{
     list-style-type: none;
     text-decoration: none;
+    
+}
+
+li.nav1 a   {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #393C41;
+    font-weight: normal;
+    font-size: 18px;
+}
+li.nav2 a   {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #393C41;
+    font-weight: normal;
+    font-size: 18px;
+}
+li.nav3 a   {
     font-family: "Barlow Semi Condensed", sans-serif;
     color: #ededed;
+    font-weight: normal;
+    font-size: 18px;
+}
+li.nav4 a   {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #393C41;
     font-weight: normal;
     font-size: 18px;
 }
@@ -148,13 +170,13 @@ body    {
 .nav2   {
     width: 150px;
     height: 50px;
-    background-color: #242424;
+    /* background-color: #242424; */
     border-radius: 0px 0px 20px 20px;
 }
 .nav3   {
     width: 150px;
     height: 50px;
-    /* background-color: #242424; */
+    background-color: #242424;
     border-radius: 0px 0px 20px 20px;
 }
 .nav4   {
@@ -168,16 +190,16 @@ body    {
 /* hover nav */
 
 .nav1:hover {
-    background-color: #24242480;
+    background-color: #24242421;
 }
-/* .nav2:hover {
-    background-color: #24242438;
+.nav2:hover {
+    background-color: #24242421;
+}
+/* .nav3:hover {
+    background-color: #24242454;
 } */
-.nav3:hover {
-    background-color: #24242480;
-}
 .nav4:hover {
-    background-color: #24242480;
+    background-color: #24242421;
 }
 /* center nav-menu */
 .nav1 a{
@@ -209,227 +231,160 @@ body    {
 }
 /* center nav-menu stop*/
 
+/* exhibitor */
 
-
-/* maps-image-dragable */
-
-
-#maps-image {
+#exhibitor-flex {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 600px;
-    padding-bottom: 100px;
-}
-
-.overlay-radius {
-    /* position: absolute; */
-    margin-top: 500px;
     width: 1240px;
-    height: 200px;
-    z-index: 2;
+    height: auto;
+    justify-content: center;
     /* background-color: #ffffff; */
 }
 
-#frame-dragable-image-fairhall  {
-    display: flex;
-    flex-direction: column;
-    width: 1240px;
-    height: 600px;
-    padding: 0;
+#exhibitor {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 1140px;
+    height: 500px;
     background-color: #ffffff;
-    border-radius: 0px 0px 100px 100px;
-    align-items: center;
-    position: absolute;
-    clip: rect(0px,1240px,600px,0px);
-    
+    border-radius: 25px;
+    box-shadow: 0px 0px 2px rgba(56, 56, 56, 0.459);
 }
 
-#dragable-image {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: 1s;
-    /* re-position image */
-    
-}
-
-#dragable-image img {
-    position: relative;
-    z-index: 0;
-    transition: 1s;
-}
-
-
-/* button-maps */
-
-#button-maps    {
-    display: flex;
-    position: absolute;
-    z-index: 2;
-    justify-content: center;
-    width: 110px;
-    height: 170px;
-    background-color: #242424;
-    box-shadow: 0px 0px 8px #242424c4;
-    border-radius: 30px;
+.head-title {
+    display: inherit;
     margin: 0;
-    padding: 0;
-    right: 50px;
-    bottom: 100px;
-}
-
-#arrow  {
-    display: inherit;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    width: 72px;
-    height: 72px;
-    border-radius: 100%;
-    background-color: #242424;
-    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.322);
-    top: 20px;
-}
-
-#vertical  {
-    position: absolute;
-    display: inherit;
-    flex-direction: column;
-    gap: 28px;
-}
-
-#horizontal {
-    margin-top: 2px;
-    position: absolute;
-    display: inherit;
-    gap: 37px;   
-}
-
-/* hover arrow */
-
-#arrow:hover    {
-    box-shadow: 0px 0px 5px #92babac7;
-}
-
-.up a{
-    opacity: 50%;
-}
-.up a:hover{
-    opacity: 100%;
-}
-
-.down a{
-    opacity: 50%;
-}
-.down a:hover{
-    opacity: 100%;
-}
-
-.left a{
-    opacity: 50%;
-}
-.left a:hover{
-    opacity: 100%;
-}
-
-.right a{
-    opacity: 50%;
-}
-.right a:hover{
-    opacity: 100%;
-}
-
-/* buttom-zoom */
-#zoom-control   {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    position: absolute;
-    z-index: 2;
-    bottom: 25px;
-}
-
-.zoomOut    {
-    display: inherit;
-    justify-content: center;
-    width: 30px;
+    padding-top: 15px;
+    padding-left: 40px;
+    width: 1100px;
     height: 30px;
-    background-color: #242424;
-    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.322);
-    border-radius: 10px;
+    border-width: 0 0 1px 0;
+    border-color: #393C41;
+    border-style: solid;
+    /* background-color: lawngreen; */
 }
 
-.zoomOut a  {
-    margin-top: 2px;
-    padding: 0 7px;
-    opacity: 50%;
-}
-
-.zoomIn    {
-    display: inherit;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    background-color: #242424;
-    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.322);
-    border-radius: 10px;
-}
-
-.zoomIn a  {
-    margin-top: 2px;
-    padding: 5px 7px;
-    opacity: 50%;
-}
-
-
-/* zoom button hover */
-
-.zoomOut:hover    {
-    box-shadow: 0px 0px 5px #92babac7;
-}
-.zoomIn:hover    {
-    box-shadow: 0px 0px 5px #92babac7;
-}
-
-.zoomOut a:hover   {
-    opacity: 100%;
-}
-.zoomIn a:hover   {
-    opacity: 100%;
-}
-
-
-
-
-
-/* expand content */
-.about-fairhall  {
-    width: 80%;
-    margin: 0px 100px 100px 100px;
-    color: #777777;
-}
-
-.about-fairhall h3   {
+h5 {
+    margin: 0px;
     font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 500;
-    font-size: 28px;
+    color: #393C41;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.title-items    {
+    display: flex;
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 40px;
+    width: 1100px;
+    height: 30px;
+    border-width: 0 0 1px 0;
+    border-color: #393C41;
+    border-style: solid;
 
 }
 
-.about-fairhall p    {
-    font-family: "barlow", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+.title-items h5:nth-of-type(1) {
+    flex-grow: 1;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #393C41;
+    font-weight: 500;
+    font-size: 14px;
+}
+.title-items h5:nth-of-type(2) {
+    flex-grow: 1;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #393C41;
+    font-weight: 500;
+    font-size: 14px;
+}
+.title-items h5:nth-of-type(3) {
+    flex-grow: 1;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #393C41;
+    font-weight: 500;
+    font-size: 14px;
+}
+.title-items h5:nth-of-type(4) {
+    flex-grow: 3;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #393C41;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+
+
+
+#scrolling-mask {
+    margin-top: 20px;
+    padding-left: 40px;
+    height: 380px;
+    width: 1070px ;
+    position: absolute;
+    clip: rect(0px,1200px,400px,0px);
+    overflow-y: scroll;
+
+}
+
+
+/* DOM item style */
+.dom-item   {
+    display: flex;
+    margin-top:15px;
+    width: 1000px;
+    height: 120px;
+    border-width: 0 0 1px 0;
+    border-color: #777777;
+    border-style: solid;
+}
+
+p.item-nama {
+    width: 179.167px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #777777;
+    font-weight: normal;
+    font-size: 12px;
     letter-spacing: normal;
-    line-height: 26px;
+    line-height: 18px;
+    font-stretch: semi-expanded;
+}
+p.item-brandList {
+    width: 186.167px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #777777;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: normal;
+    line-height: 18px;
+    font-stretch: semi-expanded;
+}
+p.item-contact {
+    width: 219.167px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #777777;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: normal;
+    line-height: 18px;
+    font-stretch: semi-expanded;
+}
+p.item-desc {
+    width: 400px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #777777;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: normal;
+    line-height: 18px;
     font-stretch: semi-expanded;
 }
 
+
+/* footer */
 .footer {
     display: flex;
     width: 100%;
