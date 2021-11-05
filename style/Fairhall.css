@@ -125,8 +125,9 @@ body    {
 }
 
 #nav-menu ul li {
-    display: inline;
+    display: grid;
     list-style: none;
+    align-items: center;
 }
 
 #nav-menu ul li a{
@@ -135,7 +136,7 @@ body    {
     font-family: "Barlow Semi Condensed", sans-serif;
     color: #ededed;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* background nav-menu */
@@ -181,31 +182,23 @@ body    {
 }
 /* center nav-menu */
 .nav1 a{
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 35px;
+    display: flex;
+    justify-content: center;
 }
 
 .nav2 a{
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 45px;  
+    display: flex;
+    justify-content: center;  
 }
 
 .nav3 a{
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .nav4 a{
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 50px;
+    display: flex;
+    justify-content: center;
 }
 /* center nav-menu stop*/
 

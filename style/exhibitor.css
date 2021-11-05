@@ -99,7 +99,7 @@ body    {
 
 /*nav menu bar */
 
-#frame-menu {
+#container nav-menu {
     position: relative;
     float: left;
     margin-bottom: 0px;
@@ -125,8 +125,9 @@ body    {
 }
 
 #nav-menu ul li {
-    display: inline;
+    display: grid;
     list-style: none;
+    align-items: center;
 }
 
 #nav-menu ul li a{
@@ -139,25 +140,25 @@ li.nav1 a   {
     font-family: "Barlow Semi Condensed", sans-serif;
     color: #393C41;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
 }
 li.nav2 a   {
     font-family: "Barlow Semi Condensed", sans-serif;
     color: #393C41;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
 }
 li.nav3 a   {
     font-family: "Barlow Semi Condensed", sans-serif;
     color: #ededed;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
 }
 li.nav4 a   {
     font-family: "Barlow Semi Condensed", sans-serif;
     color: #393C41;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* background nav-menu */
@@ -203,31 +204,23 @@ li.nav4 a   {
 }
 /* center nav-menu */
 .nav1 a{
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 35px;
+    display: flex;
+    justify-content: center;
 }
 
 .nav2 a{
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 45px;  
+    display: flex;
+    justify-content: center;  
 }
 
 .nav3 a{
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .nav4 a{
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 50px;
+    display: flex;
+    justify-content: center;
 }
 /* center nav-menu stop*/
 

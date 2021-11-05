@@ -126,8 +126,10 @@ body    {
 }
 
 #nav-menu ul li {
-    display: inline;
+    display: grid;
     list-style: none;
+    align-items: center;
+    
 }
 
 #nav-menu ul li a{
@@ -136,7 +138,7 @@ body    {
     font-family: "Barlow Semi Condensed", sans-serif;
     color: #ededed;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* background nav-menu */
@@ -182,31 +184,23 @@ body    {
 }
 /* center nav-menu */
 .nav1 a{
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 35px;
+    display: flex;
+    justify-content: center;
 }
 
 .nav2 a{
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 45px;  
+    display: flex;
+    justify-content: center;  
 }
 
 .nav3 a{
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .nav4 a{
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 50px;
+    display: flex;
+    justify-content: center;
 }
 /* center nav-menu stop*/
 
@@ -242,26 +236,41 @@ body    {
     margin-top: -100px;
 }
 
+#video-button a img  {
+    opacity: 80%;
+}
+
 #contact-us-button  {
     margin-left: 500px;
+}
+
+#contact-us-button a img{
+    opacity: 80%;
 }
 
 #info-button    {
     margin-left: 30px;
 }
 
+#info-button a img {
+    opacity: 80%;
+}
+
 
 #video-button a img:hover {
+    opacity: 100%;
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(56, 56, 56, 0.726);
 }
 
 #contact-us-button a img:hover    {
+    opacity: 100%;
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(56, 56, 56, 0.247);
 }
 
 #info-button  a img:hover {
+    opacity: 100%;
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(56, 56, 56, 0.247);
 }
@@ -278,16 +287,18 @@ body    {
     text-decoration: none;
     font-family: "Barlow Semi Condensed", sans-serif;
     color: #ffffff;
-    background-color: #92baba;
-    font-weight: bold;
+    background-color: #92BABA;
+    font-weight: 500;
     letter-spacing: 1px;
-    font-size: 18px;  
+    font-size: 16px;
+    opacity: 80%;  
 }
 
 #registration-button a:hover    {
+    opacity: 100%;
     color: #ffffff;
-    font-weight: bold;
-    background-color: #92baba;
+    font-weight: 500;
+    background-color: #92BABA;
     box-shadow: 0px 2px 5px rgba(56, 56, 56, 0.247);
 }
 
