@@ -27,7 +27,7 @@ body    {
 
 #header {
     display: flex;
-    /* width: 100%; */
+    /* width: 1240px; */
     height: 70px;
     background-color: #242424;
     align-items: center;
@@ -37,6 +37,7 @@ body    {
 #logo   {
     margin-left: 50px;
 }
+
 
 /* submenu booth */
 #sub-menu   {
@@ -73,6 +74,7 @@ body    {
 #brochure-button a img  {
     opacity: 80%;
 }
+
 #brochure-button a img:hover {
     opacity: 100%;
     border-radius: 10px;
@@ -128,8 +130,8 @@ body    {
 
 /* info button */
 #info-button  {
-    margin-left: 0px;
-    margin-top: 240px;
+    margin-right: 0px;
+    margin-top: 340px;
     position: absolute;
 }
 
@@ -148,7 +150,7 @@ iframe#video-player  {
     position: absolute;
     display: inherit;
     align-items: center;
-    margin-top: 310px;
+    margin-top: 435px;
     margin-left: 0px;
 }
 

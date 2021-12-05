@@ -31,11 +31,82 @@ body    {
     height: 70px;
     background-color: #242424;
     align-items: center;
-    gap: 400px;
+    gap: 800px;
 }
 
 #logo   {
     margin-left: 50px;
+}
+
+/* submenu booth */
+#sub-menu   {
+    display:inherit;
+    gap: 30px;
+    /* position: absolute; */
+    /* width: auto; */
+    text-decoration: none;
+    color: #ededed;
+}
+
+
+#exit-button  {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+#exit-button a img  {
+    opacity: 80%;
+}
+#exit-button a img:hover {
+    opacity: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(56, 56, 56, 0.726);
+}
+
+
+#brochure-button  {
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+#brochure-button a img  {
+    opacity: 80%;
+}
+#brochure-button a img:hover {
+    opacity: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(56, 56, 56, 0.726);
+}
+
+
+#contactUs-button  {
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+#contactUs-button a img  {
+    opacity: 80%;
+}
+#contactUs-button a img:hover {
+    opacity: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(56, 56, 56, 0.726);
+}
+
+
+#product-button  {
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+#product-button a img  {
+    opacity: 80%;
+}
+#product-button a img:hover {
+    opacity: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(56, 56, 56, 0.726);
 }
 
 #booth  {
@@ -54,62 +125,12 @@ body    {
     /* z-index: 0; */
 }
 
-#sub-menu   {
-    top: 360px;
-    display:inherit;
-    gap: 50px;
-    position: absolute;
-    width: auto;
-    text-decoration: none;
-    color: #ededed;
-}
 
-
-/* submenu booth */
-
-#exit-button  {
-    margin-right: 332px;
-    margin-left: -490px;
-    margin-top: 180px;
-}
-
-#exit-button a img  {
-    opacity: 80%;
-}
-#exit-button a img:hover {
-    opacity: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(56, 56, 56, 0.726);
-}
-
-
-/* group icon */
-
-#groupIcon {
-    display: inherit;
-    flex-direction: column;
-    margin-right: -200px;
-    gap: 20px;
-}
-
-
-#brochure-button  {
-    margin-right: 0px;
-    margin-top: 0px;
-}
-
-#brochure-button a img  {
-    opacity: 80%;
-}
-#brochure-button a img:hover {
-    opacity: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(56, 56, 56, 0.726);
-}
-
+/* info button */
 #info-button  {
-    margin-left: 0px;
-    margin-top: -7px;
+    margin-left: 193px;
+    margin-top: 350px;
+    position: absolute;
 }
 
 #info-button a img  {
@@ -121,43 +142,16 @@ body    {
     box-shadow: 0px 2px 5px rgba(56, 56, 56, 0.726);
 }
 
-#contactUs-button  {
-    margin-right: 0px;
-    margin-top: -10px;
-}
 
-#contactUs-button a img  {
-    opacity: 80%;
-}
-#contactUs-button a img:hover {
-    opacity: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(56, 56, 56, 0.726);
-}
-
-
-#product-button  {
-    margin-left: 0px;
-    margin-top: -12px;
-}
-
-#product-button a img  {
-    opacity: 80%;
-}
-#product-button a img:hover {
-    opacity: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(56, 56, 56, 0.726);
-}
-
-
+/* video display */
 iframe#video-player  {
     position: absolute;
     display: inherit;
     align-items: center;
-    margin-top: 28px;
-    margin-left: -300px;
+    margin-top: 180px;
+    margin-left: 15px;
 }
+
 
 
 .about-booth  {

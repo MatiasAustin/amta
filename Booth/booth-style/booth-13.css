@@ -128,8 +128,8 @@ body    {
 
 /* info button */
 #info-button  {
-    margin-left: 0px;
-    margin-top: 240px;
+    margin-left: -30px;
+    margin-top: 320px;
     position: absolute;
 }
 
@@ -148,8 +148,8 @@ iframe#video-player  {
     position: absolute;
     display: inherit;
     align-items: center;
-    margin-top: 310px;
-    margin-left: 0px;
+    margin-top: 240px;
+    margin-left: -885px;
 }
 
 
