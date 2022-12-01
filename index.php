@@ -44,7 +44,7 @@ require __DIR__.'/amtaExpo/vendor/autoload.php';
 |
 */
 
-$app = require_once __DIR__.'/../amtaExpo/bootstrap/app.php';
+$app = require_once __DIR__.'/amtaExpo/bootstrap/app.php';
 
 $kernel = $app->make(Kernel::class);
 
