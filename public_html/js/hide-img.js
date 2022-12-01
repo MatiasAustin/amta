@@ -1,4 +1,4 @@
-
+//This Script is off and useing  @extends('components/JS/hide-img')
 // Value to hide
 const getImg1 = document.querySelector('div#booth1 img').src;
 const getImg2 = document.querySelector('div#booth2 img').src;
@@ -68,8 +68,6 @@ const hide30 = document.querySelector('div#booth30 a');
 const hide31 = document.querySelector('div#booth31 a');
 const hide32 = document.querySelector('div#booth32 a');
    
-
-
 
 
 // Function to hide
