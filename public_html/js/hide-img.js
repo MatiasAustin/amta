@@ -1,4 +1,5 @@
 //This Script is off and useing  @extends('components/JS/hide-img')
+//comment added
 // Value to hide
 const getImg1 = document.querySelector('div#booth1 img').src;
 const getImg2 = document.querySelector('div#booth2 img').src;
