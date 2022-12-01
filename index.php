@@ -16,8 +16,8 @@ define('LARAVEL_START', microtime(true));
 |
 */
 
-if (file_exists(__DIR__.'/amtaExpo/storage/framework/maintenance.php')) {
-    require __DIR__.'/amtaExpo/storage/framework/maintenance.php';
+if (file_exists(__DIR__.'/../amtaExpo/storage/framework/maintenance.php')) {
+    require __DIR__.'/../amtaExpo/storage/framework/maintenance.php';
 }
 
 /*
@@ -31,7 +31,7 @@ if (file_exists(__DIR__.'/amtaExpo/storage/framework/maintenance.php')) {
 |
 */
 
-require __DIR__.'/amtaExpo/vendor/autoload.php';
+require __DIR__.'/../amtaExpo/vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -44,7 +44,7 @@ require __DIR__.'/amtaExpo/vendor/autoload.php';
 |
 */
 
-$app = require_once __DIR__.'/amtaExpo/bootstrap/app.php';
+$app = require_once __DIR__.'/../amtaExpo/bootstrap/app.php';
 
 $kernel = $app->make(Kernel::class);
 
