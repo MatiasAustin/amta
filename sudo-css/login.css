@@ -1,0 +1,113 @@
+*   {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1a1e1f;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper    {
+    margin: auto 0;
+    padding: 0;
+    width: 100%;
+}
+
+#display-grid   {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px auto;
+}
+
+#logo   {
+    margin: 0
+}
+
+#login-form {
+    margin: 50px auto;
+}
+
+#display-grid form#login-form label.title   {
+    text-decoration: none;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #b8b8b8;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+#display-grid form#login-form input.input   {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 350px;
+    height: 25px;
+
+    /* text style */
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #858585;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+
+input#button-su   {
+    width: 120px;
+    height: 25px;
+    background-color: #63b1c9;
+    border: none;
+    border-radius: 5px;
+
+    /* text style */
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #858585;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+input#button-su:hover{
+    cursor: pointer;
+    background-color: #5496aa;
+
+    /* text style */
+    color: #dddddd;
+}
+
+#r-m    {
+    display: flex;
+    align-items: center;
+}
+
+#r-m .remember-me-cont  {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+#r-m .remember-me-cont .remember-me    {
+    
+    text-decoration: none;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #b8b8b8;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 9px;
+}
+
+form#login-form a.forgot-p  {
+    position: absolute;
+    text-decoration: none;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #b8b8b8;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 9px;
+}
